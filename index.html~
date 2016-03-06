@@ -16,7 +16,7 @@ layout: default
         <footer>
         <p>Posted in <a href="category-url" >jekyll</a>, <a href="category-url" >javascript</a>, <a href="category-url" >html</a></p></footer>
     </article>
-    {% endfor %}
+{% endfor %}
     </article>
     {% include sidebar.html %}
 </main>
