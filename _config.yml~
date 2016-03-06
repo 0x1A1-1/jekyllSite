@@ -17,5 +17,8 @@ gems: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
+kramdown: 
+    auto_ids: false
 paginate: 3
-paginate_path: '/fuckface/page:num/'
+paginate_path: '/pages/page:num/'
+permalink: /pages/:title/

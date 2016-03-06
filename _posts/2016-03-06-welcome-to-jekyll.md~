@@ -1,19 +1,24 @@
 ---
 layout: post
 title: "Welcome to JEKYLL!"
+date: 2016-03-06
 ---
-Welcome to the companion site for the lynda.com course Jekyll for Web Designers. This course is designed to present Jekyll to web designers in a clear, concise way. In this post we’ll take a quick look at how Jekyll works, and whether it’s right for you. 
+Welcome to the companion site for the [lynda.com](http://www.lynda.com "lynda.com") course **Jekyll for Web Designers**. This course is designed to present Jekyll to web designers in a clear, concise way. In this post we’ll take a quick look at how Jekyll works, and whether it’s right for you. 
 
-Jekyll bills itself as “a simple, blog-aware, static site generator.” It takes source files like templates, stylesheets, includes, and posts and uses them to generate a website that can then be hosted on your server of choice. This means that the entire website is generated at once, and visitors are simply served static files. This can be much faster than blogging platforms like WordPress, which use a CMS to generate pages as they’re requested. This blog, for example, was generated from a series of templates, posts, html snippets, and CSS using Jekyll.
+Jekyll bills itself as “a simple, blog-aware, static site generator.” It takes source files like templates, stylesheets, includes, and posts and uses them to generate a website that can then be hosted on your server of choice. This means that the entire website is generated at once, and visitors are simply served static files. This can be much faster than blogging platforms like WordPress, which use a CMS to generate pages as they’re requested. [This blog]({{site.baseurl}}/index.html "articles"), for example, was generated from a series of templates, posts, html snippets, and CSS using Jekyll.
 
-Although Jekyll is built to be “blog aware,” it’s important to point out that it is not blogging software in the traditional sense. It’s simply a parsing engine that builds what you put into it. This means that while you have total control over every aspect of your site, you also have to build everything as well. That may sound daunting at first, but once you get the hang of how it works you can quickly and easily start building Jekyll-driven sites.
+>you remove layers, simplicity and speed happen.
+<cite>&mdash;Ginni Rometty</cite>
 
-How Jekyll works
+Although Jekyll is built to be [“blog aware,”][1] it’s important to point out that it is not blogging software in the traditional sense. It’s simply a parsing engine that builds what you put into it. This means that while you have total control over every aspect of your site, you also have to build everything as well. That may sound daunting at first, but once you get the hang of how it works you can quickly and easily start building Jekyll-driven sites.
 
-Jekyll is a Ruby-based parsing engine that uses YAML, the Liquid Templating language, and Markdown to assemble content into HTML. That might sound confusing at first, but it’s really pretty simple. YAML is used to store data, site variables, and what is known as “front matter,” which drives things like the layout used for a post or page. Liquid is used to build the templates that pages are built from, and Markdown can be used to format content for individual posts or pages. You can also use regular HTML to format content as well, but Markdown makes writing content much more natural. This post, for example, was written in Markdown.
+### How Jekyll works
+
+Jekyll is a Ruby-based parsing engine that uses [YAML](http://yaml.org "YAML"), the Liquid Templating language, and Markdown to assemble content into HTML. That might sound confusing at first, but it’s really pretty simple. YAML is used to store data, site variables, and what is known as “front matter,” which drives things like the layout used for a post or page. Liquid is used to build the templates that pages are built from, and Markdown can be used to format content for individual posts or pages. You can also use regular HTML to format content as well, but Markdown makes writing content much more natural. This post, for example, was written in Markdown.
 
 A simple Jekyll directory looks like this:
 
+~~~~~~~
 ├── _config.yml 
 ├── _includes 
 |   ├── footer.html 
@@ -28,8 +33,9 @@ A simple Jekyll directory looks like this:
 |   ├── main.css  
 ├── _site  
 └── index.html
+~~~~~~~
 
-The _config.yml file is a YAML file that contains the overall site configuration such as site title, author information, pagination, and permalinks. The _includes directory holds HTML snippets that can be injected on any desired page with a simple Liquid tag. The _layouts folder contains the HTML templates that are used to generate pages for the site, and the _posts directory contains the individual blog posts, written in either Markdown or HTML. Note the naming convention for the posts. This is used to date stamp the posts and can be used for site organization and permalinks. The css directory contains the CSS for the site, and in this case is not preceded by an underscore. Any directory without an underscore is not parsed, and is copied as-is when the site is generated. Jekyll also supports SASS, any .scss files with YAML front matter would be parsed and processed. The _site directory is where the generated site will be created. From there it can be uploaded to your server of choice. Finally the index.htm file contains the content and blogging logic for the home page of the blog, and typically uses one of the templates for overall page structure.
+The **_config.yml** file is a YAML file that contains the overall site configuration such as site title, author information, pagination, and permalinks. The _includes directory holds HTML snippets that can be injected on any desired page with a simple Liquid tag. The _layouts folder contains the HTML templates that are used to generate pages for the site, and the _posts directory contains the individual blog posts, written in either Markdown or HTML. Note the naming convention for the posts. This is used to date stamp the posts and can be used for site organization and permalinks. The css directory contains the CSS for the site, and in this case is not preceded by an underscore. Any directory without an underscore is not parsed, and is copied as-is when the site is generated. Jekyll also supports SASS, any .scss files with YAML front matter would be parsed and processed. The _site directory is where the generated site will be created. From there it can be uploaded to your server of choice. Finally the index.htm file contains the content and blogging logic for the home page of the blog, and typically uses one of the templates for overall page structure.
 
 In addition to the Liquid tags, Jekyll uses YAML front matter to guide the creation of pages. A post, for example, might have this YAML front matter at the top of the page:
 
@@ -45,7 +51,7 @@ category: jekyll
 
 This tells Jekyll to use the “post” template to assemble the page, and assigns the ‘title’ and ‘category’ variables that can be used on that page or throughout the site. Jekyll will process any file that contains YAML front matter. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It can contain any of the predefined global variables such as layout, permalink, or category or any custom variable you wish to create. If you wished to display the authors name, for example, you could add author: ‘author’s name’ to the front matter and then reference that in your templates using {{page.author}}.
 
-Is Jekyll right for you?
+### Is Jekyll right for you?
 
 Jekyll isn’t right for every designer, or every project. It’s perfect for smaller sites, blogs, portfolios, and project wikis, but might not be right for corporate sites or sites that require advanced functionality and heavy database usage. 
 
@@ -65,4 +71,5 @@ Extensibility. Jekyll’s community is only a fraction of the size of WordPress 
 
 I highly recommend checking out Jekyll and giving it a try, it might just be the tool you’re looking for. For a high-level view of Jekyll check out Tom Preston-Werner’s post announcing the creation of Jekyll. It will give you a better understanding of the philosophy behind Jekyll and how it works.
 
- 
+[1]: http://xiaojunhe.com "personal Web"
+[2]: http://jekyllrb.com "Jekyll"
