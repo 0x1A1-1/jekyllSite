@@ -8,8 +8,8 @@
 # Site settings
 title: Xiao's first Jekyll
 description: "Xiao's first experiment with Jekyll and he's trying to find Hyde"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: ""
+baseurl: "/jekyllSite" # the subpath of your site, e.g. /blog
+url: "http://cigarent.github.io/jekyllSite"
 twitter_username: hexigar
 github_username:  cigarent
 tagline: "Tutorial wants the tagline"
