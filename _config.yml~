@@ -18,4 +18,4 @@ gems: [jekyll-paginate]
 # Build settings
 markdown: kramdown
 paginate: 3
-paginate_path: '/pages/page:num/'
+paginate_path: '/fuckface/page:num/'
