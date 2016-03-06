@@ -4,7 +4,7 @@ baseurl: "/jekyllSite"
 url: "http://cigarent.github.io/jekyllSite"
 twitter_username: hexigar
 github_username:  cigarent
-tagline: "Xiao needs to learn"
+tagline: "Tutorial wants the tagline"
 gems: [jekyll-paginate]
 
 # Build settings

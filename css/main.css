@@ -346,6 +346,8 @@ img, object, embed {
 -----------------------------------------------------*/
 .page-header {
 	padding: 1em 1em 0;
+	background: url(/images/header.jpg);
+	background-size: 800px 150px;
 }
 header {
 	margin-bottom: 2em;
@@ -359,7 +361,7 @@ header h1 {
 header p {
 	font: 1em 'Oswald', 'Helvetica Narrow', Arial, sans-serif;
 	font-weight: 400;
-	color: #666;
+	color: #00cc00;
 	text-transform: uppercase;
 }
 /* -------------------------------------------------- 
@@ -543,7 +545,7 @@ h3:target + .taglist .return {
 	display: block;
 }
 .return a {
-	font-size: 0.9em;
+	font-size: 0.8em;
 	text-decoration: none;
 	color: #dc8b21;
 }

@@ -283,7 +283,7 @@ th {
 -----------------------------------------------------*/
 body {
 	font: 110% 'Roboto Slab', Georgia, serif;
-	background: white;
+	background: grey;
 	direction: ltr;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -346,6 +346,8 @@ img, object, embed {
 -----------------------------------------------------*/
 .page-header {
 	padding: 1em 1em 0;
+	background: url(/images/header.jpg);
+	background-size: 800px 150px;
 }
 header {
 	margin-bottom: 2em;
