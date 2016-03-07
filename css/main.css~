@@ -283,7 +283,7 @@ th {
 -----------------------------------------------------*/
 body {
 	font: 110% 'Roboto Slab', Georgia, serif;
-	background: grey;
+	background: white;
 	direction: ltr;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -361,7 +361,7 @@ header h1 {
 header p {
 	font: 1em 'Oswald', 'Helvetica Narrow', Arial, sans-serif;
 	font-weight: 400;
-	color: #666;
+	color: #00cc00;
 	text-transform: uppercase;
 }
 /* -------------------------------------------------- 
@@ -589,8 +589,8 @@ aside li {
 .github {
 	background: url(../images/github.svg) no-repeat;
 }
-.fb {
-	background: url(../images/facebook.svg) no-repeat;
+.insta {
+	background: url(../images/insta.svg) no-repeat;
 }
 .linked {
 	background: url(../images/linkedin.svg) no-repeat;
